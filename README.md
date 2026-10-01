@@ -5,11 +5,42 @@ Course: BCS2143 / BIT3203
 Estimated time: 60 minutes
 Mode: individual or pair work
 
-## Before You Start
+## Start Here
 
-Read this page directly on GitHub. Use a Python notebook or editor for Parts A and C, and a Markdown file for your written answers. Python 3 is sufficient for the required coding tasks. Part B is a planning and calculation exercise using the supplied figures; no dataset download is required. No API key, paid LLM service or live model is required.
+1. Fork this repository or download it using **Code > Download ZIP**.
+2. Open the project folder in your Python editor (Python 3.10+ recommended).
+3. Follow [TASKS.md](TASKS.md), complete the numbered TODOs in `starter/`,
+   and write your explanations in [answers.md](answers.md).
+4. Run the checks from the project root:
 
-If you want to run the optional preprocessing snippet in Part B, install scikit-learn with `python -m pip install scikit-learn`.
+```console
+python -m unittest discover -s tests -v
+```
+
+The initial 13 checks report `NotImplementedError` because the student functions
+are unfinished. Complete the functions until all checks pass. No additional
+packages, dataset download, API key or live LLM is required.
+
+## Project Structure
+
+```text
+.
+|-- README.md                   Exercise background and examples
+|-- TASKS.md                    Step-by-step TODO checklist
+|-- answers.md                  Student answer template
+|-- starter/
+|   |-- __init__.py
+|   |-- semantic_network.py     Part A: ISA lookup and UNKNOWN
+|   |-- ml_metrics.py           Part B: split, recall, accuracy, macro-F1
+|   `-- llm_safety.py           Part C: grounded prompt and structured checks
+`-- tests/
+    `-- test_exercises.py       13 checks for student implementations
+```
+
+Part B calculates metrics from the slide examples and explains the preprocessing
+plan; it does not train a model. Part C extends the simple text example below
+with checks on structured facts and action names. The lecturer still reviews
+the prompt instructions and written reasoning.
 
 ## Learning Outcomes
 
