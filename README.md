@@ -1,8 +1,8 @@
 # Tutorial Exercise: Semantic Networks, Machine Learning and LLM Safety
 
 Date: 1 October 2026  
-Course: BCS2143 / BIT3203, Topics 6 and 7  
-Estimated time: 60 to 90 minutes  
+Course: BCS2143 / BIT3203
+Estimated time: 60 minutes
 Mode: individual or pair work
 
 ## Before You Start
